@@ -1,4 +1,4 @@
-# hgb
+# multigit
 
 ```
 g421 - git utilities for CS 421
