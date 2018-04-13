@@ -1,0 +1,31 @@
+name:                multigit
+version:             0.1.0.0
+-- synopsis:
+-- description:
+homepage:            https://github.com/mbeckman/hgb#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Mattox Beckman
+maintainer:          mattox@illinois.edu
+copyright:           2017 Mattox Beckman
+category:            Web
+build-type:          Simple
+extra-source-files:  README.md
+cabal-version:       >=1.10
+
+executable mg
+  hs-source-dirs:      app, src
+  main-is:             Main.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  other-modules:       Lib
+  build-depends:       base
+                     , unordered-containers
+                     , turtle
+                     , optparse-applicative
+                     , foldl
+  default-language:    Haskell2010
+
+
+source-repository head
+  type:     git
+  location: https://github.com/githubuser/hgb
